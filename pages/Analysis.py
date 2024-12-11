@@ -93,7 +93,7 @@ with tab2:
                               TotOrders=('order_id','nunique')).reset_index().sort_values(by='Revenue',ascending=False)
 
     # Load GeoJSON data (Australian States boundaries)
-    with open(r'C:\sherif\DS course\python sessions\session 40\shopping Card Project - Assignment\australian-states.geojson') as f:
+    with open(r'Data/australian-states.geojson') as f:
         geojson = json.load(f)
 
     # Create a choropleth map
