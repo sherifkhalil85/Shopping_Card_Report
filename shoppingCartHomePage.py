@@ -11,11 +11,11 @@ st.set_page_config(
 st.sidebar.success('Please select page above: ')
 
 ########################Loading data ###########################
-df1 = pd.read_csv('df1.csv')
-df2 = pd.read_csv('df2.csv')
-df3 = pd.read_csv('df3.csv')
-inactive_customers = pd.read_csv('inactive_customers.csv')
-customers = pd.read_csv('customers.csv')
+df1 = pd.read_csv('Data/df1.csv')
+df2 = pd.read_csv('Data/df2.csv')
+df3 = pd.read_csv('Data/df3.csv')
+inactive_customers = pd.read_csv('Data/inactive_customers.csv')
+customers = pd.read_csv('Data/customers.csv')
 
 ################################################################
 
