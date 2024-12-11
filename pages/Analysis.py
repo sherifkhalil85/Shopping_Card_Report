@@ -14,7 +14,7 @@ df1 = pd.read_csv('Data/df1.csv')
 df2 = pd.read_csv('Data/df2.csv')
 df3 = pd.read_csv('Data/df3.csv')
 inactive_customers = pd.read_csv('Data/inactive_customers.csv')
-customers = pd.read_csv('Data/df2.customers.csv')
+customers = pd.read_csv('Data/customers.csv')
 df3['days_to_deliver'] = pd.to_timedelta(df3['days_to_deliver']).dt.days
 #########################  Tabs  ###################################################
 st.markdown(
