@@ -10,11 +10,11 @@ import numpy as np
 st.set_page_config(layout='wide')
 
 ########################Loading data ###########################
-df1 = pd.read_csv('C:\sherif\DS course\python sessions\session 40\shopping Card Project - Assignment/df1.csv')
-df2 = pd.read_csv('C:\sherif\DS course\python sessions\session 40\shopping Card Project - Assignment/df2.csv')
-df3 = pd.read_csv('C:\sherif\DS course\python sessions\session 40\shopping Card Project - Assignment/df3.csv')
-inactive_customers = pd.read_csv('C:\sherif\DS course\python sessions\session 40\shopping Card Project - Assignment/inactive_customers.csv')
-customers = pd.read_csv('C:\sherif\DS course\python sessions\session 40\shopping Card Project - Assignment/customers.csv')
+df1 = pd.read_csv('Data/df1.csv')
+df2 = pd.read_csv('Data/df2.csv')
+df3 = pd.read_csv('Data/df3.csv')
+inactive_customers = pd.read_csv('Data/inactive_customers.csv')
+customers = pd.read_csv(''Data/df2.customers.csv')
 df3['days_to_deliver'] = pd.to_timedelta(df3['days_to_deliver']).dt.days
 #########################  Tabs  ###################################################
 st.markdown(
