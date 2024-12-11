@@ -5,7 +5,7 @@ import plotly_express as px
 
 
 st.set_page_config(
-    layout='wide', page_title='Shopping Cart', page_icon=':100:'
+    layout='wide', page_title='Shopping Cart', page_icon='🛒'
 )
 
 st.sidebar.success('Please select page above: ')
