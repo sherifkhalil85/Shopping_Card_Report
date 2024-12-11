@@ -336,8 +336,7 @@ with tab4:
         dfsd= df1
     else:
         dfsd= df1[df1['state']== DeSel]
-    
-    
+            
     Deliver_AVG=round(dfsd['days_to_deliver'].mean(),2)
     Deliver_max=dfsd['days_to_deliver'].max()
     Deliver_min=dfsd['days_to_deliver'].min()
@@ -349,6 +348,13 @@ with tab4:
     UO=Deliver_median + (IQR*1.5)
     LO=Deliver_median - (IQR*1.5)
     
+    dfsd['outlier']= np.where((dfsd['days_to_deliver'] > UO) | (dfsd['days_to_deliver'] < LO), 1, 0)
+    outl= dfsd['outlier'].sum()
+    
+    if outl.sum() == 0:
+        st.markdown( " We don't have any outliers")
+    else:
+        st.markdown(f" there are {outl} outlier datapoints ")
 
     with st.container():
         st.markdown( '<div style="border: 2px solid #000083; padding: 20px; color: gray; text-align: center; font-size: 24px; margin-bottom: 20px;"><h3>Delivery (days) Descriptive Statistics</h3></div>',
